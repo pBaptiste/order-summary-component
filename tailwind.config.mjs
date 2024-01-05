@@ -13,6 +13,10 @@ export default {
 				'card': '00px 40px 40px -20px rgba(13, 48, 189, 0.15)',
 				'button' : '0px 20px 20px 0px rgba(56, 42, 225, 0.19)',
 			},
+			backgroundImage: {
+				'pattern-mobile': 'url("/src/images/pattern-background-mobile.svg")',
+				'pattern-desktop': 'url("/src/images/pattern-background-desktop.svg")',
+			},
 		},
 	},
 	plugins: [],
