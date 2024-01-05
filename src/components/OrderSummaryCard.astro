@@ -1,0 +1,31 @@
+---
+    import { Image } from "astro:assets";
+    import heroImg from '../images/illustration-hero.svg'
+    import musicIcon from '../images/icon-music.svg'
+---
+
+<article class="max-w-[327px] md:max-w-[450px] max-h-[567px] md:max-h-[697px] bg-white rounded-[20px] shadow-card">
+    <div class="w-[327px] md:w-[450px] h-[160px] md:h-[220px]">
+        <Image src={heroImg} alt="" class="w-full h-full object-cover rounded-t-[20px]"/>
+    </div>
+    
+    <div class="py-8 md:pt-[45px] md:pb-12 px-6 md:px-12 flex flex-col">
+        <h1 class="text-primary text-center text-[1.375rem] md:text-[1.75rem] font-black mb-4 md:mb-[17px]">Order Summary</h1>
+        <p class="text-secondary text-center text-[.938rem] md:text-base font-medium leading-[1.563rem] md:leading-[1.625rem] mb-6 md:mb-5">You can now listen to millions of songs, audiobooks, and podcasts on any device anywhere you like!</p>
+
+        <div class="p-4 pt-[17px] md:px-6 md:py-[25px] bg-[#F7F9FF] flex items-center justify-between rounded-[11px] mb-6">
+            <div class="flex items-center gap-5">
+                <Image src={musicIcon} alt=""/>
+            <p class="text-primary text-sm md:text-base font-black mb-[3px] md:mb-[6px]">Annual Plan <span class="block text-secondary font-medium">$59.99/year</span></p>
+            </div>
+            
+            <a href="#" class="text-accent hover:text-accent-hover hover:no-underline focus:text-accent-hover focus:no-underline text-[0.813rem] md:text-sm font-bold underline">Change</a>
+        </div>
+
+        <button class="bg-accent hover:bg-accent-hover focus:bg-accent-hover transition-colors duration-500 shadow-button rounded-[11px] py-[15px] w-full text-white text-[.938rem] font-bold mb-6 md:mb-8">Proceed to Payment</button>
+
+        <button class="text-secondary hover:text-primary focus:text-primary text-[.938rem] font-black">Cancel Order</button>
+       
+    </div>
+    
+</article>
